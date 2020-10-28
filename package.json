@@ -1,0 +1,17 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "hot": "supervisor -i node_modules index.js"
+  },
+  "author": "czk",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "md5-node": "^1.0.1"
+  }
+}

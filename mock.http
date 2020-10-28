@@ -1,0 +1,15 @@
+POST http://192.168.1.106:8099/mock/172.16.18.147:8081/s147/big-screen-api/web/jjldcb/getJjldcb 
+content-type: application/json
+
+{"region":"350000"}
+
+
+###
+GET http://192.168.1.106:8099/mock/172.16.18.147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202009&xzlx00=310&jzlx00=0&startTime=202001
+
+###
+
+POST http://172.16.18.147:8080/Ysjgxt/web/DpModuleService/service/PunishedPhysicianSumQuery
+content-type: application/json
+
+{"plx":"0","orgid":""}
