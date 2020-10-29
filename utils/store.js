@@ -17,21 +17,21 @@ async function setStuff (value, path = defalutpath) {
 }
 
 
-const getJson = ((key, callback, path = defalutpath,) => {
-  getStuff(path).then(res => {
-    // console.log(res)
+const getJson = ((key, callback) => {
+  getStuff().then(res => {
     const json = res ? JSON.parse(res) : {}
-    if (json !== undefined) {
+    // console.log('读取数据', json[key])
+    // console.log(json[key])
+    if (typeof (json[key]) !== "undefined") {
+      // console.log('有数据', json[key])
       callback(json[key])
-      return json[key]
     } else {
-      return false
+      callback(false)
     }
   })
-
 })
-const setJson = ((key, value = {}, path = defalutpath) => {
-  getStuff(path).then(res => {
+const setJson = ((key, value = {}) => {
+  getStuff().then(res => {
     const json = res ? JSON.parse(res) : {}
     json[key] = value
     if (json !== undefined) {

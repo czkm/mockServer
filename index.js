@@ -4,7 +4,7 @@ const server = new http.Server()
 const axios = require('axios');
 const store = require('./utils/store')
 const md5 = require('md5-node')
-const querystring = require('querystring')
+// const querystring = require('querystring')
 const Url = require('url')
 const headers = {
   "Content-Type": "application/json;charset=UTF-8",
@@ -40,11 +40,13 @@ server.on('request', function (request, response) {
     }
     if (request.method === 'GET') {
       store.getJson(reurl, ((res) => {
+        // console.log('GET-res', res)
         if (res) {//如果命中缓存🎯
           console.log('get请求命中缓存🎯')
           response.writeHead(200, headers)
           response.end(JSON.stringify(res))
         } else {
+          console.log('get请求命中发送······')
           axios.get(reurl)
             .then(res => {
               store.setJson(reurl, res.data)
@@ -52,28 +54,31 @@ server.on('request', function (request, response) {
               response.end(JSON.stringify(res.data));
             })
             .catch(err => {
-              console.log(err);
+              console.log('geterr', err);
             })
         }
       }))
     } else {//post 请求
       const newURL = Url.parse(reurl)
-
+      // console.log(newURL)
       parseJSON(request, response, ((res) => {
+        // console.log('res', res)
         const key = reurl + md5(res)//post请求用Md5加密保证参数独立性
         const postData = res
-        store.getJson(key, ((res) => {
+        store.getJson(key, (res => {
           const opheaders = {
             // 'Content-Length': length,
             // 'appid': request.headers.appid !== undefined ? request.headers.appid : '1',
             'Content-Type': 'application/json;charset=UTF-8'
 
           }
+          // store.getJson(reurl)
           if (res) {//如果命中缓存🎯
             console.log('post请求命中缓存🎯')
             response.writeHead(200, headers)
             response.end(JSON.stringify(res))
           } else {
+            console.log('post请求命中....')
             axios.post(reurl, postData, { headers: opheaders })
               .then(function (res) {
                 store.setJson(key, res.data)
@@ -81,12 +86,10 @@ server.on('request', function (request, response) {
                 response.end(JSON.stringify(res.data));
               })
               .catch(function (err) {
-                console.log(err);
+                console.log('posterr', err);
               });
-
           }
         }))
-        // console.log(arguments)
       }))
 
     }
