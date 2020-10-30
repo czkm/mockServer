@@ -6,11 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "hot": "supervisor -i node_modules index.js"
+    "hot": "supervisor -i node_modules index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "author": "czk",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "md5-node": "^1.0.1"
+  },
+  "devDependencies": {
+    "vuepress": "^1.7.1"
   }
 }

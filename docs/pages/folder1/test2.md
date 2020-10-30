@@ -1,52 +1,8 @@
-# mockServer
-
-Build Setup
-
-# install dependencies
-
-npm install
-
-# serve with hot reload at localhost:8099
-
-npm run hot
-
----
-
-# 主题使用方法：https://github.com/xitu/juejin-markdown-themes
-
-theme: juejin
-highlight: github
-
----
-
-## 前言
-
-不知道各位前端们在日常的开发生产中是否有过像我一样的困扰
-
-1. 公司用的内网或特定网络，离开公司就没办法使用内部接口？
-2. 大屏项目或各种向领导演示时担心网络不稳定，导致页面的数据，echart 图表等无法显示？
-3. 在没有后端没有开发完的情况下怎样自己实时制造接口数据来保证自己前端开发的进度不落后？
-   ..........
-   其实总结就是缺少了一个我们前端可以控制的接口服务
-
-## 先看效果～
-
-- node 服务启动前 依赖内网环境的前端项目所有的接口都无法使用
-  ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cdac36e61071430e99921cab75b9cbe7~tplv-k3u1fbpfcp-watermark.image)
-
-- node 服务启动后 在内网状态下进行缓存后即可在脱离内网环境下演示和调试页面
-  ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06ee4795b23b4eca8acc5e9f4fb61776~tplv-k3u1fbpfcp-watermark.image)
-
-- node 服务在有缓存后可以保证向服务请求时不用等待 ⌛️ 后端数据库的查询，接口往往在 10ms 以内就可以返回，保证演示的时候界面不会出现因为等待某个接口而造成页面图表或文字显示不全
-  ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57524c93cd6e40d19fbe70a829e19502~tplv-k3u1fbpfcp-watermark.image)
-
-## 开始手写代码
-
-#### 思路说明
+## 思路说明
 
 - 其实并不是什么高大尚的东西，本质就是在有网络环境的情况下启动一个 node 服务，请求后将所有请求的数据保存在本地的 json 文件中，之后如果在缺乏网络环境或者需要脱离后端自行调试的时候就可以完全由 node 服务获取接口数据。
 
-#### 目录构建
+## 前端项目结构
 
 由于是个简单的项目，在这里我也就不使用 koa，egg 等框架了，有需要的小伙伴可以自行引入
 
@@ -62,7 +18,7 @@ highlight: github
     └── store.js	 //处理相关逻辑
 ```
 
-##### 代码编写
+## 代码编写
 
 1. store.js
 
@@ -254,28 +210,3 @@ server.listen(8099, function () {
 
 - 安装依赖`axios,md5-node`,入口文件的思路很简单，在收到请求后先截取`/mock/`后的 url 用来作为`store`的 key 值。
 - 在本地 json 中读取到这个 key 值则直接返回 value 值不去请求后端接口，如果没有 key 值则请求后端接口并将后端的返回值写入本地的 json 文件中，之后再返回给前端。
-
-## 服务的启动与使用
-
-1. `npm install supervisor -g`安装这个依赖可以使我们服务热更新便于调试。
-   ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/48d5e07cf3ab4fd3b5f1f62985a312d4~tplv-k3u1fbpfcp-watermark.image)
-
-2. 运行`npm run hot` 此时项目已经启动
-3. 前端服务在原先的地址上加入此时 node 地址,例如原先前端请求地址为`172.16.18.147:8080/xxx/xxxx`则此时在前端 axios 请求配置为
-   `http://node服务ip:8099/mock/172.16.18.147:8080/xxx/xxxx`
-   ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/268c3a95ae7c4ee3a04900ca87247699~tplv-k3u1fbpfcp-watermark.image)
-
-4. 页面正常的接口请求后，所有的返回数据会保存在本地的 json 文件中
-   ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2678ee2ee0c452792d5c7ef2925b290~tplv-k3u1fbpfcp-watermark.image)
-
-5. 服务开启时，如果请求命中 🎯 缓存则不会再走网络请求，而是直接获取本地 json 中的值
-   ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6638b5c92b504dbf90f63cf64ec73433~tplv-k3u1fbpfcp-watermark.image)
-
-## 小结
-
-至此 node 服务的功能大致已经介绍完毕啦。以后再有演示或者脱离后端的情况下只要你开启 node 服务
-就可以用本地缓存来展示数据啦～
-
-做完这个后又想着做一个 electron 版本的服务了，这样就可以时时自定义请求头和接口参数，这部分就下次再更新了
-
-这是我的[github 项目地址](https://github.com/czkm/mockServer)有需要的朋友们可以去看看然后点个 star ～
