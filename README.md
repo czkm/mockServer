@@ -10,14 +10,7 @@ npm install
 
 npm run hot
 
----
 
-# 主题使用方法：https://github.com/xitu/juejin-markdown-themes
-
-theme: juejin
-highlight: github
-
----
 
 ## 前言
 
