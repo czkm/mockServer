@@ -12,6 +12,12 @@ npm run hot
 
 ---
 
+---
+
+更新了 electron 版本
+
+## cd electron 文件夹 或 查看使用文档 `czkm.github.io/mockserver/dist/`
+
 # 主题使用方法：https://github.com/xitu/juejin-markdown-themes
 
 theme: juejin
