@@ -17,14 +17,16 @@ const {
   refuse_headers,
   Allow_headers,
   Allowed_headers,
+  store_area,
+  store_name,
 } = setting;
 
 //url,method
-const APP = process.type === 'renderer' ? remote.app : app;
-const ST_PATH = APP.getPath('userData');
-console.log('地址:' + ST_PATH);
+// const APP = process.type === 'renderer' ? remote.app : app;
+// const ST_PATH = APP.getPath('userData');
+console.log(`缓存地址:${store_area}下的 ${store_name}.json`);
 
-function toparams (obj) {
+function toparams(obj) {
   let str = '';
   obj = obj instanceof Object ? obj : JSON.parse(obj);
   Object.entries(obj).forEach((val, index) => {
@@ -33,17 +35,19 @@ function toparams (obj) {
   return str;
 }
 
-export const request = function (port) {
-  server.on('request', function (req, res) {
+export const request = function(port) {
+  server.on('request', function(req, res) {
     if (req.url !== '/favicon.ico') {
       const index = req.url.indexOf('/mock/');
       const url = 'http://' + req.url.substr(index + 6);
       if (req.method === 'GET') {
         if (isgoel && store.get(url) && store.get(url).normal) {
           setTimeout(() => {
+            console.log('get🎯缓存');
+
             res.writeHead(200, headers);
-            res.write(store.get(url).data.toString());
-            res.end();
+            res.end(store.get(url).data.toString());
+            // res.end();
           }, timeout);
         } else {
           let rqHeafer = {};
@@ -60,8 +64,8 @@ export const request = function (port) {
             response.on('data', (chunk) => {
               setTimeout(() => {
                 res.writeHead(200, headers);
-                res.write(chunk.toString());
-                res.end();
+                res.end(chunk.toString());
+                // res.end();
                 store.set(url, {
                   config: {
                     url: url,
@@ -115,7 +119,7 @@ export const request = function (port) {
           res.end();
         }, timeout);
       } else {
-        console.log('post');
+        // console.log('post');
         const querystring = require('querystring');
         const Url = require('url');
         const newURL = Url.parse(url);
@@ -127,9 +131,10 @@ export const request = function (port) {
           const key = url + stars + postData;
           if (isgoel && store.get(key) && store.get(key).normal) {
             setTimeout(() => {
+              console.log('post🎯缓存');
               res.writeHead(200, headers);
-              res.write(store.get(key).data.toString());
-              res.end();
+              res.end(store.get(key).data.toString());
+              // res.end();
             }, timeout);
           } else {
             let rq = {};
@@ -150,14 +155,14 @@ export const request = function (port) {
             };
 
             let result = '';
-            const request = http.request(options, function (_res) {
+            const request = http.request(options, function(_res) {
               _res.setEncoding('utf8');
-              _res.on('data', function (chunk) {
+              _res.on('data', function(chunk) {
                 setTimeout(async () => {
                   result += chunk;
                   res.writeHead(200, headers);
                   await res.end(result.toString());
-                  console.log('send');
+                  // console.log('send');
                   let rq2 = rq;
                   Object.entries(rq2).forEach((val) => {
                     if (!val[1]) {
@@ -179,8 +184,8 @@ export const request = function (port) {
               console.error(`api error: ${e.message}`);
             });
             setTimeout(() => {
-              request.write(chunk.toString());
-              request.end();
+              request.end(chunk.toString());
+              // request.end();
             }, timeout);
           }
         });
@@ -188,8 +193,8 @@ export const request = function (port) {
     } else {
       setTimeout(() => {
         res.writeHead(200, headers);
-        res.write('');
-        res.end();
+        res.end('');
+        // res.end();
       }, timeout);
     }
   });

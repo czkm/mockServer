@@ -10,19 +10,19 @@ export default new Router({
     //   name: 'landing-page',
     //   component: require('@/App').default,
     // },
-    {
-      path: '/',
-      name: 'login',
-      component: require('@/view/login').default,
-    },
     // {
-    //   path: '/test',
-    //   name: 'test',
-    //   component: require('@/view/test').default,
+    //   path: '/',
+    //   name: 'login',
+    //   component: require('@/view/login').default,
     // },
     {
-      path: '*',
-      redirect: '/login',
+      path: '/',
+      name: 'manage',
+      component: require('@/view/manage').default,
     },
+    // {
+    //   path: '*',
+    //   redirect: '/login',
+    // },
   ],
 });

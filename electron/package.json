@@ -55,7 +55,7 @@
     "cfonts": "^2.8.6",
     "chalk": "^2.4.2",
     "electron-store": "^6.0.1",
-    "element-ui": "^2.13.2",
+    "element-ui": "^2.14.0",
     "escape-string-regexp": "^4.0.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",

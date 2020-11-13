@@ -1,0 +1,365 @@
+{
+	"$allname": [
+		"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryYSKDS?bsds00=35",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryQSCBZG?bsds00=35&regionCity=35&endTime=202010",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryjGXXDS?bsds00=35",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryYLFYGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+		"http://172.16.18.75:8089/jtgj/user/login?username=syb&password=syb@jtgj2020",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryylfzbqk1?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&startTime=202001&jzlx00=0",
+		"http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=2020119",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJMYLJZ?bsds00=35&regionCity=35&endTime=202010",
+		"http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/zhsymx/queryJtzhgjye",
+		"http://172.16.18.147:8081/s147_dev/big-screen-api/web/jjldcb/getJjldcb?region=350000",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/get_jjzjqkInfo?startTime=202001&endTime=202010&bsds00=35&area=35&insurance=310",
+		"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=1&aaa027=359900",
+		"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=2&aaa027=359900",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJMJFRSBH01?startTime=202001&endTime=202010&bsds00=35&xzlx00=390&regionCity=35",
+		"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=3&aaa027=359900",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryYSKQS?bsds00=35",
+		"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=4&aaa027=359900",
+		"http://172.16.18.147:8080/Ysjgxt/web/DpModuleService/service/PunishedPhysicianSumQuery?plx=0&orgid=",
+		"http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=20201111",
+		"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+		"http://172.17.1.50:8080/fpb-bs/user/login?username=ybdp&password=YbDpta2&K(a@=undefined"
+	],
+	"$Collection": [
+		{
+			"title": "1135",
+			"data": [
+				"http://172.16.18.147:8080/zephyr_jzfp/dev/queryYSKDS?bsds00=35",
+				"http://172.16.18.147:8080/zephyr_jzfp/dev/queryYLFYGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+				"http://172.16.18.147:8080/zephyr_jzfp/dev/queryQSCBZG?bsds00=35&regionCity=35&endTime=202010",
+				"http://172.16.18.147:8080/zephyr_jzfp/dev/queryjGXXDS?bsds00=35",
+				"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+				"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin"
+			]
+		},
+		{
+			"title": "112",
+			"data": [
+				"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+				"http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=20201111",
+				"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+				"http://172.17.1.50:8080/fpb-bs/user/login?username=ybdp&password=YbDpta2&K(a@=undefined"
+			]
+		},
+		{
+			"title": "1",
+			"data": [
+				"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=2&aaa027=359900",
+				"http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+				"http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=20201111",
+				"http://172.16.18.147:8080/Ysjgxt/web/DpModuleService/service/PunishedPhysicianSumQuery?plx=0&orgid=",
+				"http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=4&aaa027=359900"
+			]
+		}
+	],
+	"$History": [
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryQSCBZG?bsds00=35&regionCity=35&endTime=202010",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryjGXXDS?bsds00=35",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+		"http://172.16.18.75:8089/jtgj/user/login?username=syb&password=syb@jtgj2020",
+		"http://172.16.18.147:8080/zephyr_jzfp/dev/queryJMYLJZ?bsds00=35&regionCity=35&endTime=202010"
+	],
+	"http://172-16-18-75:8089/jtgj/user/login?username=syb&password=syb@jtgj2020": {
+		"config": {
+			"url": "http://172.16.18.75:8089/jtgj/user/login?username=syb&password=syb@jtgj2020",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json;charset=UTF-8",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"code\":200,\"message\":\"认证成功!\",\"mid\":\"5facd1ba4a526357396fab02_172.16.2.226\",\"traceId\":\"0f996dcf67973736\",\"spanId\":\"0f996dcf67973736\",\"data\":\"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI0U1F0QjJxUiIsInN1YiI6IjVlZjljYzk2Njc4MzY0MzNiY2EzZWI4ZCIsImV4cCI6MTYwNTE2MzIwMywiaWF0IjoxNjA1MTYxNDAzfQ.Pex6_P2IRII_CEWNdx6seSDm8ryTs6b9J2kEa4REMlaqpthvShHWYW1zr_xPwyNSvfvoppNQvlXaHSDTKkr2PQ\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8081/s147_dev/big-screen-api/web/jjldcb/getJjldcb?region=350000": {
+		"config": {
+			"url": "http://172.16.18.147:8081/s147_dev/big-screen-api/web/jjldcb/getJjldcb?region=350000",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json;charset=UTF-8",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "<!DOCTYPE html>\n<html>\n<head>\n<title>Error</title>\n<style>\n    body {\n        width: 35em;\n        margin: 0 auto;\n        font-family: Tahoma, Verdana, Arial, sans-serif;\n    }\n</style>\n</head>\n<body>\n<h1>An error occurred.</h1>\n<p>Sorry, the page you are looking for is currently unavailable.<br/>\nPlease try again later.</p>\n<p>If you are the system administrator of this resource then you should check\nthe error log for details.</p>\n<p><em>Faithfully yours, nginx.</em></p>\n</body>\n</html>\n",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=1&aaa027=359900": {
+		"config": {
+			"url": "http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=1&aaa027=359900",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"success\",\"message\":\"成功\",\"data\":445,\"total\":0,\"totalPages\":0}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryylfzbqk1?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&startTime=202001&jzlx00=0": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryylfzbqk1?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&startTime=202001&jzlx00=0",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":[]},\"traceid\":\"\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-75:8089/jtgj/lwjtgj/gjjgl/zhsymx/queryJtzhgjye": {
+		"config": {
+			"url": "http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/zhsymx/queryJtzhgjye",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"authorization": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI0U1F0QjJxUiIsInN1YiI6IjVlZjljYzk2Njc4MzY0MzNiY2EzZWI4ZCIsImV4cCI6MTYwNTE2MzIwMywiaWF0IjoxNjA1MTYxNDAzfQ.Pex6_P2IRII_CEWNdx6seSDm8ryTs6b9J2kEa4REMlaqpthvShHWYW1zr_xPwyNSvfvoppNQvlXaHSDTKkr2PQ",
+				"content-type": "application/json;charset=UTF-8",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"code\":200,\"mid\":\"5facd37704ceb74c6c5f7630_172.16.2.226\",\"traceId\":\"8586255322fb0a48\",\"spanId\":\"8586255322fb0a48\",\"data\":{\"jtgjzhye\":\"190451167.2\"}}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/get_jjzjqkInfo?startTime=202001&endTime=202010&bsds00=35&area=35&insurance=310": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/get_jjzjqkInfo?startTime=202001&endTime=202010&bsds00=35&area=35&insurance=310",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "[]",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryJMYLJZ?bsds00=35&regionCity=35&endTime=202010": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryJMYLJZ?bsds00=35&regionCity=35&endTime=202010",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":[]},\"traceid\":\"\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryJMJFRSBH01?startTime=202001&endTime=202010&bsds00=35&xzlx00=390&regionCity=35": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryJMJFRSBH01?startTime=202001&endTime=202010&bsds00=35&xzlx00=390&regionCity=35",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":[]},\"traceid\":\"\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin?bindPassword=admin&bindUsername=admin&password=admin&username=admin": {
+		"config": {
+			"url": "http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, */*",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"info\",\"message\":\"登陆成功\",\"data\":\"fe535932-4bb0-46e1-8c44-477e7f3a1b19\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=2020119": {
+		"config": {
+			"url": "http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=2020119",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"authorization": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJQSmlVRVpzbiIsInN1YiI6IjVlZjljYzk2Njc4MzY0MzNiY2EzZWI4ZCIsImV4cCI6MTYwNDk5NTc4NiwiaWF0IjoxNjA0OTkzOTg2fQ.2o--a7Mwm9X4tQ3t7_9-d2TGkOcUXvBN9Jb-zJCNbh8Yq8ok8RUnOm_RbYcR9YUEEV-l3A2ekr58t-GxbNByuQ",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":402,\"message\":\"token已过期\",\"traceId\":\"3bd4afd040ec451f\",\"spanId\":\"3bd4afd040ec451f\"}",
+		"ctime": "2020-11-12",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryYSKDS?bsds00=35": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryYSKDS?bsds00=35",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":{\"slider\":[1],\"hasPrePage\":false,\"startRow\":1,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":11,\"totalCount\":11,\"firstPage\":true,\"totalPages\":1,\"limit\":50,\"page\":1,\"items\":[{\"地区\":\"3501\",\"医师人数\":12501},{\"地区\":\"350128\",\"医师人数\":880},{\"地区\":\"3502\",\"医师人数\":15966},{\"地区\":\"3503\",\"医师人数\":6097},{\"地区\":\"3504\",\"医师人数\":8024},{\"地区\":\"3505\",\"医师人数\":13717},{\"地区\":\"3506\",\"医师人数\":7687},{\"地区\":\"3507\",\"医师人数\":5857},{\"地区\":\"3508\",\"医师人数\":5966},{\"地区\":\"3509\",\"医师人数\":2555},{\"地区\":\"3599\",\"医师人数\":9380}]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryYLFYGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryYLFYGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":{\"slider\":[1],\"hasPrePage\":false,\"startRow\":1,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":1,\"totalCount\":1,\"firstPage\":true,\"totalPages\":1,\"limit\":50,\"page\":1,\"items\":[{\"耗材费占比\":\"14.27%\",\"医疗服务设施费占比\":\"4.18%\",\"检查化验费占比\":\"48.05%\",\"药品费占比\":\"33.5%\",\"耗材费\":824274.948765,\"医疗服务设施费\":241423.850676,\"检查化验费\":2775088.521408,\"药品费\":1934600.521589,\"ROW_ID\":1}]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryQSCBZG?bsds00=35&regionCity=35&endTime=202010": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryQSCBZG?bsds00=35&regionCity=35&endTime=202010",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":{\"slider\":[1],\"hasPrePage\":false,\"startRow\":1,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":1,\"totalCount\":1,\"firstPage\":true,\"totalPages\":1,\"limit\":50,\"page\":1,\"items\":[{\"在职人数\":696.44,\"总人数\":866.52,\"在职占比\":\"80.37%\",\"赡养比\":4.1,\"退休占比\":\"19.63%\",\"退休人数\":170.08,\"ROW_ID\":1}]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin": {
+		"config": {
+			"url": "http://172.16.18.67:8888/ces/web/sys/login/dologin?bindPassword=admin&bindUsername=admin&password=admin&username=admin",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, */*",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"info\",\"message\":\"登陆成功\",\"data\":\"9bf483fb-1557-4b6a-beb3-0bc518e0d814\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryjGXXDS?bsds00=35": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryjGXXDS?bsds00=35",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list2\":{\"slider\":[],\"hasPrePage\":false,\"startRow\":0,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":0,\"totalCount\":0,\"firstPage\":true,\"totalPages\":0,\"limit\":50,\"page\":1,\"items\":[]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryJJZCGC?bsds00=35&regionCity=35&endTime=202010&xzlx00=ALL&jzlx00=0&startTime=202001",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":{\"slider\":[1],\"hasPrePage\":false,\"startRow\":1,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":1,\"totalCount\":1,\"firstPage\":true,\"totalPages\":1,\"limit\":50,\"page\":1,\"items\":[{\"总补偿额\":3191315.236653,\"统筹基金占比\":\"87.33%\",\"商保基金\":259295.628653,\"商保基金占比\":\"8.13%\",\"统筹基金\":2786960.163558,\"其他\":64712.576815,\"精准扶贫占比\":\"0.26%\",\"医疗救助占比\":\"2.25%\",\"精准扶贫\":8399.630592,\"其他占比\":\"2.03%\",\"医疗救助\":71947.237035,\"ROW_ID\":1}]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/zephyr_jzfp/dev/queryYSKQS?bsds00=35": {
+		"config": {
+			"url": "http://172.16.18.147:8080/zephyr_jzfp/dev/queryYSKQS?bsds00=35",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"flag\":\"1\",\"cause\":\"操作成功\",\"data\":{\"list\":{\"slider\":[1],\"hasPrePage\":false,\"startRow\":1,\"offset\":0,\"lastPage\":true,\"prePage\":1,\"hasNextPage\":false,\"nextPage\":1,\"endRow\":1,\"totalCount\":1,\"firstPage\":true,\"totalPages\":1,\"limit\":50,\"page\":1,\"items\":[{\"医师人数\":88630}]}},\"traceid\":\"\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-17-1-50:8080/fpb-bs/user/login?username=ybdp&password=YbDpta2&K(a@=undefined": {
+		"config": {
+			"url": "http://172.17.1.50:8080/fpb-bs/user/login?username=ybdp&password=YbDpta2&K(a@=undefined",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"authorization": "[object Object]",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":500,\"message\":\"账户或密码错误,您还有4次登陆机会(5fadf08c5c647825a85ea6ab)\",\"mid\":\"5fadf08c5c647825a85ea6ab\",\"status\":999,\"error\":\"None\",\"traceId\":\"1118e24e358e87fa\",\"spanId\":\"1118e24e358e87fa\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/Ysjgxt/web/DpModuleService/service/PunishedPhysicianSumQuery?plx=0&orgid=": {
+		"config": {
+			"url": "http://172.16.18.147:8080/Ysjgxt/web/DpModuleService/service/PunishedPhysicianSumQuery?plx=0&orgid=",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"success\",\"message\":\"成功\",\"data\":[{\"orgid\":\"08\",\"pnum\":\"4\"},{\"orgid\":\"04\",\"pnum\":\"33\"},{\"orgid\":\"99\",\"pnum\":\"7\"}],\"total\":0,\"totalPages\":0}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=2&aaa027=359900": {
+		"config": {
+			"url": "http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=2&aaa027=359900",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"success\",\"message\":\"成功\",\"data\":705,\"total\":0,\"totalPages\":0}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=4&aaa027=359900": {
+		"config": {
+			"url": "http://172.16.18.147:8080/Ysjgxt/web/Af05Manage/Af05/getOrgCountLogOutOrNoActive?type=4&aaa027=359900",
+			"method": "GET",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"accept-language": "zh-CN,zh;q=0.9"
+			}
+		},
+		"data": "{\"code\":0,\"type\":\"success\",\"message\":\"成功\",\"data\":940,\"total\":0,\"totalPages\":0}",
+		"ctime": "2020-11-13",
+		"normal": true
+	},
+	"http://172-16-18-75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=20201111": {
+		"config": {
+			"url": "http://172.16.18.75:8089/jtgj/lwjtgj/gjjgl/gjyxjc/queryGdszhqk?startTime=20200701&endTime=20201111",
+			"method": "POST",
+			"headers": {
+				"accept": "application/json, text/plain, */*, application/json, text/plain, */*",
+				"authorization": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI0U1F0QjJxUiIsInN1YiI6IjVlZjljYzk2Njc4MzY0MzNiY2EzZWI4ZCIsImV4cCI6MTYwNTE2MzIwMywiaWF0IjoxNjA1MTYxNDAzfQ.Pex6_P2IRII_CEWNdx6seSDm8ryTs6b9J2kEa4REMlaqpthvShHWYW1zr_xPwyNSvfvoppNQvlXaHSDTKkr2PQ",
+				"accept-language": "zh-CN,zh;q=0.9",
+				"content-type": "application/json;charset=UTF-8"
+			}
+		},
+		"data": "{\"code\":402,\"message\":\"token已过期\",\"traceId\":\"0195b81e17494abe\",\"spanId\":\"0195b81e17494abe\"}",
+		"ctime": "2020-11-13",
+		"normal": true
+	}
+}

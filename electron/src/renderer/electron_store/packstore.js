@@ -1,31 +1,42 @@
 import elStore from 'electron-store';
+import setting from '../../setting';
+const { store_area, store_name } = setting;
 
-// const area = 'C:/Users/Administrator/AppData/Roaming/sjdp';
-// const el_name = 'config';
-
-// const elstore = new elStore({
-//   name: el_name,
-//   cwd: area,
-// });
-const elstore = new elStore();
+console.log('stre', store_area, store_name);
+const elstore = new elStore({
+  name: store_name,
+  cwd: store_area,
+});
+// const elstore = new elStore();
 
 // console.log('本地缓存路径:' + area + '下的' + el_name + '.json文件');
 
-function allNames() {
+function allNames () {
   return elstore.get('$allname')
     ? new Set([...elstore.get('$allname')])
     : new Set([]);
 }
-function isreplace(key) {
+function allHistory () {
+  return elstore.get('$History')
+    ? [...elstore.get('$History')]
+    : []
+}
+function allCollection () {
+  return elstore.get('$Collection')
+    ? [...elstore.get('$Collection')]
+    : [];
+}
+
+function isreplace (key) {
   return key.replace(/\./g, '-');
 }
 
 export default {
-  get: function(key) {
+  get: function (key) {
     //获取
     return elstore.get(isreplace(key));
   },
-  set: function(key, value) {
+  set: function (key, value) {
     //添加
     let allname = allNames();
     allname.add(key);
@@ -36,11 +47,95 @@ export default {
     elstore.set(key.replace(/\./g, '-'), value);
     elstore.set('$allname', [...allname]);
   },
-  all: function() {
+  // +++++++++++++++++++++++++
+
+  getHistory: function (key) {
+    let History = allHistory();
+    return History
+  },
+  setHistory: function (key) {
+    let History = allHistory();
+    History.push(key);
+    // console.log('History', History)
+    let newHistory = [...new Set(History)]
+    elstore.set('$History', [...newHistory]);
+  },
+  delHistory: function () {
+    // console.log(index)
+    let History = allHistory();
+    History = []
+    elstore.set('$History', [...History]);
+
+  },
+  delSingleHistory: function (index) {
+    let History = allHistory();
+    History.splice(index, 1);
+    elstore.set('$History', [...History]);
+  },
+  getCollection: function (key) {
+    let Collection = allCollection();
+    return Collection
+  },
+  setCollection: function (obj) {
+    // let { title, data } = obj
+    let Collection = allCollection();
+    Collection.push(obj)
+    Collection = [...new Set(Collection)]
+    elstore.set('$Collection', [...Collection]);
+  },
+  editCollection: function (obj, index) {
+    let Collection = allCollection();
+    Collection.splice(index, 1, obj);
+    elstore.set('$Collection', [...Collection]);
+
+  },
+
+  delCollection: function (index) {
+    // console.log(index)
+    let Collection = allCollection();
+    Collection.splice(index, 1);
+    elstore.set('$Collection', [...Collection]);
+
+  },
+  delSingleCollection: function (index, itemindex) {
+    let Collection = allCollection();
+    Collection[index].data.splice(itemindex, 1);
+    elstore.set('$Collection', [...Collection]);
+  },
+
+  // +++++++++++++++++++++++++
+
+  all: function () {
     //获取所有保存的key
     return allNames() ? [...allNames()] : [];
   },
-  del: function(key = '') {
+  getallHistory: function () {
+    let MaxLength = setting.HistoryLength
+    let History = allHistory() ? [...allHistory()] : [];
+    if (History.length > MaxLength) {
+      console.log('超出设置lenght')
+      // History.splice((History.length - MaxLength), History.length)
+      History.shift()
+      elstore.set('$History', [...History]);
+      return History
+    }
+    return History
+
+  },
+  getallCollection: function () {
+    //获取所有保存的key
+    return allCollection() ? [...allCollection()] : [];
+  },
+  getCollectionName: function () {
+    let Collection = allCollection() ? [...allCollection()] : []
+
+    let name = []
+    Collection.forEach((item, index) => {
+      name.push(item.title)
+    })
+    return name
+  },
+  del: function (key = '') {
     //删除某个key及对应值
     if (key) {
       let allnames = allNames();
@@ -49,11 +144,11 @@ export default {
       elstore.delete(isreplace(key));
     }
   },
-  delall: function() {
+  delall: function () {
     //删除所有
     elstore.clear();
   },
-  allvalue: function(include = false) {
+  allvalue: function (include = false) {
     //获取本地全部数据
     let allname = [...allNames()];
     let ar = include ? [{ $allname: allname }] : []; //默认不包含$allname
@@ -62,7 +157,7 @@ export default {
     });
     return ar;
   },
-  has: function(key) {
+  has: function (key) {
     return elstore.has(isreplace(key));
   },
 };

@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <div class="path_route">当前路由:{{ $route.path }}</div>
+    <!-- <div class="path_route">当前路由:{{ $route.path }}</div> -->
     <!-- <button @click="retoken">first</button>
-    <button @click="test">add</button> -->
+    <button @click="test">add</button>-->
     <!-- <router-link to="login">tologin</router-link>
-    <router-link to="test">totest</router-link> -->
+    <router-link to="test">totest</router-link>-->
     <!-- <ul v-for="(item, index) in proutes" :key="index">
       <li @click="$router.push(`/${item.path}`)">{{ item.name }}</li>
-    </ul> -->
+    </ul>-->
     <router-view></router-view>
   </div>
 </template>
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: 'my-project',
-  data() {
+  data () {
     return {
       token: '',
       proutes: [
@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    GetRequest(name) {
+    GetRequest (name) {
       let theRequest = new Object()
       if (name.indexOf('?') != -1) {
         let str = name.split('?')[1]
@@ -42,7 +42,7 @@ export default {
       }
       return theRequest
     },
-    async retoken() {
+    async retoken () {
       console.log('555')
       await this.$http
         .post(
@@ -57,7 +57,7 @@ export default {
           this.token = res.data.data
         })
     },
-    async req1() {
+    async req1 () {
       await this.retoken()
       return this.$http.post(
         'http://192.168.91.1:3001/mock/172.17.1.50:8080/fpb-bs/bs/ybznjgpt/dpsy/queryToday',
@@ -68,7 +68,7 @@ export default {
       //   console.log('res', res)
       // })
     },
-    async req2() {
+    async req2 () {
       await this.retoken()
       return this.$http.post(
         'http://192.168.91.1:3001/mock/172.17.1.50:8080/fpb-bs/bs/ybznjgpt/dpsy/queryBdqk',
@@ -79,13 +79,13 @@ export default {
       //   console.log('res', res)
       // })
     },
-    test() {
-      Promise.all([this.req1(),this.req2()]).then(res=>{
-        console.log('56565',res);
+    test () {
+      Promise.all([this.req1(), this.req2()]).then(res => {
+        console.log('56565', res);
       })
     },
   },
-  mounted() {
+  mounted () {
     // this.retoken()
     // console.log('88888888')
     // console.log(
@@ -105,25 +105,28 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 0.5208333333333vw;
+}
 #app {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(147, 157, 248);
   font-weight: 800;
-  /* padding: 15px; */
+  /* padding: 1.5rem; */
 }
 .path_route {
   position: fixed;
   width: 100%;
-  height: 30px;
+  height: 3.0rem;
   background-color: rgb(120, 138, 240);
   bottom: 0;
   z-index: 999;
   font-weight: 800;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: right;
-  padding-right: 25px;
-  line-height: 30px;
+  padding-right: 2.5rem;
+  line-height: 3.0rem;
 }
 </style>
